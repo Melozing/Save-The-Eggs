@@ -1,0 +1,8 @@
+E:/ProjectGame/Catch Fruit v6/.utmp/RelWithDebInfo/1sh6g1s5/arm64-v8a/CMakeFiles/edit_cache.dir
+E:/ProjectGame/Catch Fruit v6/.utmp/RelWithDebInfo/1sh6g1s5/arm64-v8a/CMakeFiles/rebuild_cache.dir
+E:/ProjectGame/Catch Fruit v6/.utmp/RelWithDebInfo/1sh6g1s5/arm64-v8a/GameActivity/CMakeFiles/game.dir
+E:/ProjectGame/Catch Fruit v6/.utmp/RelWithDebInfo/1sh6g1s5/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+E:/ProjectGame/Catch Fruit v6/.utmp/RelWithDebInfo/1sh6g1s5/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+E:/ProjectGame/Catch Fruit v6/.utmp/RelWithDebInfo/1sh6g1s5/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+E:/ProjectGame/Catch Fruit v6/.utmp/RelWithDebInfo/1sh6g1s5/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+E:/ProjectGame/Catch Fruit v6/.utmp/RelWithDebInfo/1sh6g1s5/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir
