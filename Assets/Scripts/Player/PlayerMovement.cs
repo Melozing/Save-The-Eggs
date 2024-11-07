@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (GameController.Instance.IsGameOver())
+        if (GameController.Instance.IsGameOver() || GameController.Instance.IsGamePause())
         {
             return;
         }

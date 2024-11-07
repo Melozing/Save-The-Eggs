@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SpawnItems : MonoBehaviour
 {
-    public GameObject[] itemPrefabs; // Array of different item prefabs to spawn
+    [SerializeField] private GameObject[] itemPrefabs; // Array of different item prefabs to spawn
     private float spawnInterval = 0.62f; // Time interval between each spawn
     private float paddingPercentage = 0.1f; // Percentage padding from the edges of the screen
 

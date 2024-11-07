@@ -65,10 +65,9 @@ public class Items : MonoBehaviour
     private IEnumerator HandleDeath()
     {
         // Wait for the length of the death animation
-        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length - 0.8f);
 
-        // Wait for an additional second before stopping the game
-        yield return new WaitForSeconds(0.0001f);
+        VibrationController.Instance.Vibrate();
 
         // Call StopGameIfOver after the wait
         GameController.Instance.StopGameIfOver();
