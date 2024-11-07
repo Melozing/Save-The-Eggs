@@ -1,48 +1,28 @@
+using JS.Utils;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
-public class GameController : MonoBehaviour
+public class GameController : ManualSingletonMono<GameController>
 {
-    public static GameController Instance { get; private set; }
-
     [SerializeField] private Text _scoreText; // Text UI to display current score
     [SerializeField] private Text _scoreTextResult; // Text UI to display current score
     [SerializeField] private Text _highestScoreText; // Text UI to display highest score
+    [SerializeField] private GameObject _UIInGame; // Panel to show when game is over
     [SerializeField] private GameObject _gameOverPanel; // Panel to show when game is over
+    [SerializeField] private GameObject _pausePanel;
     [SerializeField] private GameObject _tapToPlayPanel; // Panel for starting the game
     [SerializeField] private SpawnItems _spawnItems; // Reference to the item spawning script
 
     private int _score; // Current score of the player
     private int _highestScore; // Highest score achieved by the player
     private bool _isGameOver; // Flag to check if the game is over
-
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this; // Set singleton instance
-            //DontDestroyOnLoad(gameObject); // Keep this object across scenes
-            SceneManager.sceneLoaded += OnSceneLoaded; // Subscribe to scene loaded event
-        }
-        else
-        {
-            Destroy(gameObject); // Destroy duplicate instance
-        }
-    }
+    private bool _isPause; // Flag to check if the game is over
 
     private void Start()
     {
-        _scoreText.gameObject.SetActive(false); // Hide score text initially
-        ShowTapToPlay(); // Show the tap to play panel
-    }
+        LoadHighestScore(); // Load highest score at game start
+        UpdateHighestScoreText(); // Update the UI for the highest score
 
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (Instance != this)
-        {
-            Destroy(gameObject); // Destroy the game object if it's not the singleton instance
-        }
+        ShowTapToPlay(); // Show the tap to play panel
     }
 
     public void SetScore(int value)
@@ -66,14 +46,16 @@ public class GameController : MonoBehaviour
         return _isGameOver; // Return the game over state
     }
 
-    public void SetGameOverState(bool state)
+    public bool IsGamePause()
     {
-        _isGameOver = state; // Set the game over state
+        return _isPause; // Return the game over state
     }
+
 
     public void StopGameIfOver()
     {
         _scoreTextResult.text = "Score: " + _score.ToString(); // Update the score text UI
+        _pausePanel.SetActive(false);
         _isGameOver = true; // Mark the game as over
         LoadHighestScore(); // Load the highest score at the start
         SaveHighestScore(); // Save the highest score if applicable
@@ -94,8 +76,8 @@ public class GameController : MonoBehaviour
             _highestScore = _score; // Update the highest score
             PlayerPrefs.SetInt(ConstantsPlayerPrefs.HighestScore, _highestScore); // Save the highest score to PlayerPrefs
             PlayerPrefs.Save(); // Save the changes
-            UpdateHighestScoreText(); // Update UI for highest score
         }
+        UpdateHighestScoreText(); // Update UI for highest score
     }
 
     private void UpdateHighestScoreText()
@@ -111,15 +93,22 @@ public class GameController : MonoBehaviour
 
     private void ShowTapToPlay()
     {
-        _tapToPlayPanel.SetActive(true); // Show the tap to play panel
+        _scoreText.gameObject.SetActive(false); // Hide score text initially
+        _UIInGame.gameObject.SetActive(false); // Hide score text initially
         _gameOverPanel.SetActive(false); // Hide the game over panel
+        _pausePanel.SetActive(false); // Hide the game over panel
+
+        _tapToPlayPanel.SetActive(true); // Show the tap to play panel
     }
 
     public void StartGame()
     {
         _tapToPlayPanel.SetActive(false); // Hide the tap to play panel
         _gameOverPanel.SetActive(false); // Hide the game over panel
+
+        _UIInGame.SetActive(true); // Hide the tap to play panel
         _scoreText.gameObject.SetActive(true); // Show the score text UI
+
         _spawnItems.StartSpawning(); // Start spawning items in the game
         Time.timeScale = 1; // Resume the game time
     }
@@ -132,8 +121,18 @@ public class GameController : MonoBehaviour
         Time.timeScale = 0; // Pause the game time
     }
 
-    private void OnDestroy()
+    public void PauseGame()
     {
-        SceneManager.sceneLoaded -= OnSceneLoaded; // Unsubscribe from scene loaded event
+        if (_isGameOver) return; // Do not pause the game if it is over
+        _isPause = true; // Mark the game as paused
+        _pausePanel.SetActive(true); // Show the pause panel
+        Time.timeScale = 0; // Pause the game time
+    }
+
+    public void ResumeGame()
+    {
+        _isPause = false; // Mark the game as resumed
+        _pausePanel.SetActive(false); // Hide the pause panel
+        Time.timeScale = 1; // Resume the game time
     }
 }
