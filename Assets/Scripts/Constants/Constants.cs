@@ -13,6 +13,7 @@ public static class Constants
     public const string ThemeSound = "theme";
     public const string CatchItemSound = "catchItem";
     public const string EggBrokenSound = "eggBroken";
+    public const string PopButton = "popButton";
     public const string GameOverSound = "gameOver";
 
     // Tag names
