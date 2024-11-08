@@ -1,23 +1,23 @@
 # ninja log v5
-2764	2896	7517876493614802	E:/ProjectGame/Catch Fruit v6/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1sh6g1s5/obj/arm64-v8a/libswappywrapper.so	3225cd8c538bede0
-34	2594	7517876487509041	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	31d17de21e1c55a0
-7	2350	7517876486908864	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	4ea86471f397046d
-22	2557	7517876487608228	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	68a85d125249c2e4
-39	2614	7517876488942468	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	a3c4bb0fdc4f61db
-13	2574	7517876483967589	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	c7fa35ad0f6fbe65
-18	2585	7517876486725349	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	3712cc2d13d737ac
-29	2715	7517876491581197	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	1e56240a0284644
-1	2940	7517876494006637	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	d69b67b533629231
-2353	2764	7517876492260712	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	921ebd8801a934ad
-2941	3035	7517876495038315	E:/ProjectGame/Catch Fruit v6/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1sh6g1s5/obj/arm64-v8a/libgame.so	8cd2d9699188b810
-16	934	7517894838737000	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	3712cc2d13d737ac
-935	1260	7517894841093009	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	921ebd8801a934ad
-24	1482	7517894843949965	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	c7fa35ad0f6fbe65
-3	1541	7517894844366610	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	4ea86471f397046d
-21	1561	7517894844892365	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	d69b67b533629231
-27	1612	7517894845175083	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	1e56240a0284644
-35	1620	7517894845437969	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	68a85d125249c2e4
-1260	1632	7517894845824848	E:/ProjectGame/Catch Fruit v6/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1sh6g1s5/obj/arm64-v8a/libswappywrapper.so	3225cd8c538bede0
-459	1709	7517894846588687	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	a3c4bb0fdc4f61db
-215	1737	7517894846911087	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	31d17de21e1c55a0
-1737	1959	7517894847922928	E:/ProjectGame/Catch Fruit v6/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1sh6g1s5/obj/arm64-v8a/libgame.so	8cd2d9699188b810
+28	2335	7527060654100719	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	4ea86471f397046d
+66	1334	7527060644778175	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	31d17de21e1c55a0
+2243	2382	7527060655578797	E:/ProjectGame/Catch Fruit v6/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1sh6g1s5/obj/arm64-v8a/libswappywrapper.so	3225cd8c538bede0
+86	2242	7527060645457696	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	68a85d125249c2e4
+17	1057	7527060641370660	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	c7fa35ad0f6fbe65
+120	2334	7527060654080873	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	a3c4bb0fdc4f61db
+5	1317	7527060643642338	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	3712cc2d13d737ac
+54	2336	7527060654090795	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	1e56240a0284644
+1057	2242	7527060645457696	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	921ebd8801a934ad
+41	2343	7527060654095764	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	d69b67b533629231
+2343	2461	7527060656357514	E:/ProjectGame/Catch Fruit v6/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1sh6g1s5/obj/arm64-v8a/libgame.so	8cd2d9699188b810
+74	3440	7527548320674064	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	68a85d125249c2e4
+52	3454	7527548321750380	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	31d17de21e1c55a0
+12	3608	7527548323684775	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	3712cc2d13d737ac
+85	3608	7527548322519176	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	a3c4bb0fdc4f61db
+3	3638	7527548324572613	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	c7fa35ad0f6fbe65
+31	3923	7527548327112127	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	4ea86471f397046d
+42	4179	7527548330048443	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	1e56240a0284644
+21	4197	7527548330499802	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	d69b67b533629231
+3441	4271	7527548330995798	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	921ebd8801a934ad
+4198	4522	7527548334006511	E:/ProjectGame/Catch Fruit v6/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1sh6g1s5/obj/arm64-v8a/libgame.so	8cd2d9699188b810
+4271	4525	7527548334006511	E:/ProjectGame/Catch Fruit v6/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1sh6g1s5/obj/arm64-v8a/libswappywrapper.so	3225cd8c538bede0

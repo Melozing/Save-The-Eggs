@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace JS.Utils
+namespace Melozing
 {
 
     public abstract class Singleton<T> where T : new()

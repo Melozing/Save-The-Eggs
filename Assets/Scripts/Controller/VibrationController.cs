@@ -1,4 +1,4 @@
-using JS.Utils;
+using Melozing;
 using UnityEngine;
 
 public class VibrationController : ManualSingletonMono<VibrationController>
